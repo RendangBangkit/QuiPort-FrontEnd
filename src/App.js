@@ -12,7 +12,7 @@ function App (){
           <Col sm={2}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item className="">
-                <Nav.Link eventKey="first">Monitoring</Nav.Link>
+                <Nav.Link eventKey="first">Monitor</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
