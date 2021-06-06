@@ -1,11 +1,11 @@
 /* eslint-disable array-callback-return */
 import { useEffect, useState } from "react";
 import LineChart from "./Linechart";
-import { Container, Nav, Row, Col, Tab, Tabs } from "react-bootstrap";
+import ReportList from './ReportList';
+import { Card, Container, Col, Row } from "react-bootstrap";
 
 const Dashboard = ({ reports }) => {
     const [dsbData, setdsbData] = useState(null)
-    const [key, setKey] = useState('accident');
 
     useEffect(() => {
         let dsbData = []
@@ -22,6 +22,8 @@ const Dashboard = ({ reports }) => {
         }).map((report) => {
                 
             let uid = report.uid;
+            let address_components = report.address_components;
+            let imageUrl = report.imageUrl;
             let date = new Date(report.createdAt);
             let hours = date.getHours()
             let minutes = date.getMinutes()
@@ -35,7 +37,9 @@ const Dashboard = ({ reports }) => {
                 date,
                 time,
                 fire,
-                accident
+                accident,
+                address_components,
+                imageUrl
             })
         })
 
@@ -47,19 +51,14 @@ const Dashboard = ({ reports }) => {
     return (
         <div className="dashboard">
             {dsbData && <LineChart data={dsbData} title="Realtime Detected Fire And Accident"/>}
-            <Tabs
-            id="controlled-tab-example"
-            activeKey={key}
-            onSelect={(k) => setKey(k)}
-            className="mb-3"
-            >
-            <Tab eventKey="accident" title="Accident">
-                <div>data 1</div>
-            </Tab>
-            <Tab eventKey="fire" title="Fire">
-                <div>Data 2</div>
-            </Tab>
-            </Tabs>
+            <Card className="mt-4" border="light">
+                <Card.Header>
+                    <h4 style={{textAlign: "center"}}>Today's Report</h4>
+                </Card.Header>
+                    <Card.Body>
+                        {dsbData && <ReportList reports={dsbData} />}
+                    </Card.Body>
+            </Card>
         </div>
     )
 }
