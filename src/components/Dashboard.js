@@ -24,6 +24,7 @@ const Dashboard = ({ reports }) => {
             let uid = report.uid;
             let address_components = report.address_components;
             let imageUrl = report.imageUrl;
+            let email = report.email;
             let date = new Date(report.createdAt);
             let hours = date.getHours()
             let minutes = date.getMinutes()
@@ -31,6 +32,7 @@ const Dashboard = ({ reports }) => {
         
             let fire = report.ai_results.detected_class.fire
             let accident = report.ai_results.detected_class.accident
+            let categories = report.ai_results.categories
         
             dsbData.push({
                 uid,
@@ -38,8 +40,10 @@ const Dashboard = ({ reports }) => {
                 time,
                 fire,
                 accident,
+                categories,
                 address_components,
-                imageUrl
+                imageUrl,
+                email
             })
         })
 

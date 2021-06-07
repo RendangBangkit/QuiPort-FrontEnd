@@ -17,3 +17,29 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
+.myBadgeR {
+    display: inline-block;
+    border-radius: 20%;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    background: #f34423;
+    color: #fefefe;
+    box-shadow: 0 8px 6px -6px rgb(134, 134, 134);
+    margin-right: 3px;
+}
+
+.myBadgeB {
+    display: inline-block;
+    border-radius: 20%;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    background: #0d6efd;
+    color: #fefefe;
+    box-shadow: 0 8px 6px -6px rgb(134, 134, 134);
+    margin-right: 3px;
+}

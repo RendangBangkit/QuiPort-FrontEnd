@@ -1,5 +1,5 @@
 import Dashboard from "./components/Dashboard";
-import { Container, Nav, Row, Col, Tab, } from "react-bootstrap";
+import { Container, Nav, Row, Col, Tab, Badge } from "react-bootstrap";
 import GetData from "./apis/GetData";
 
 function App (){
