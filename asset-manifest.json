@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/QuiPort-FrontEnd/static/css/main.f072bd00.chunk.css",
-    "main.js": "/QuiPort-FrontEnd/static/js/main.c0b03991.chunk.js",
-    "main.js.map": "/QuiPort-FrontEnd/static/js/main.c0b03991.chunk.js.map",
-    "runtime-main.js": "/QuiPort-FrontEnd/static/js/runtime-main.93fd07a5.js",
-    "runtime-main.js.map": "/QuiPort-FrontEnd/static/js/runtime-main.93fd07a5.js.map",
-    "static/css/2.15a7a700.chunk.css": "/QuiPort-FrontEnd/static/css/2.15a7a700.chunk.css",
-    "static/js/2.7c030390.chunk.js": "/QuiPort-FrontEnd/static/js/2.7c030390.chunk.js",
-    "static/js/2.7c030390.chunk.js.map": "/QuiPort-FrontEnd/static/js/2.7c030390.chunk.js.map",
-    "index.html": "/QuiPort-FrontEnd/index.html",
-    "static/css/2.15a7a700.chunk.css.map": "/QuiPort-FrontEnd/static/css/2.15a7a700.chunk.css.map",
-    "static/css/main.f072bd00.chunk.css.map": "/QuiPort-FrontEnd/static/css/main.f072bd00.chunk.css.map",
-    "static/js/2.7c030390.chunk.js.LICENSE.txt": "/QuiPort-FrontEnd/static/js/2.7c030390.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.f072bd00.chunk.css",
+    "main.js": "./static/js/main.c0b03991.chunk.js",
+    "main.js.map": "./static/js/main.c0b03991.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.312288fa.js",
+    "runtime-main.js.map": "./static/js/runtime-main.312288fa.js.map",
+    "static/css/2.15a7a700.chunk.css": "./static/css/2.15a7a700.chunk.css",
+    "static/js/2.7c030390.chunk.js": "./static/js/2.7c030390.chunk.js",
+    "static/js/2.7c030390.chunk.js.map": "./static/js/2.7c030390.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.15a7a700.chunk.css.map": "./static/css/2.15a7a700.chunk.css.map",
+    "static/css/main.f072bd00.chunk.css.map": "./static/css/main.f072bd00.chunk.css.map",
+    "static/js/2.7c030390.chunk.js.LICENSE.txt": "./static/js/2.7c030390.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.93fd07a5.js",
+    "static/js/runtime-main.312288fa.js",
     "static/css/2.15a7a700.chunk.css",
     "static/js/2.7c030390.chunk.js",
     "static/css/main.f072bd00.chunk.css",
